@@ -21,8 +21,8 @@ buttonOk.addEventListener("click", () => {
   let num2: number = Number(segundoNum.value);
   esMultiplo(num1, num2);
   if (resultado === true) {
-    console.log("El numero ", num1, "si es multiplo de ", num2);
+    console.log("El numero ", num2, "si es multiplo de ", num1);
   } else {
-    console.log("El numero ", num1, "no es multiplo de ", num2);
+    console.log("El numero ", num2, "no es multiplo de ", num1);
   }
 });
