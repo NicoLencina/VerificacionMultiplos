@@ -9,9 +9,9 @@ function esMultiplo(x: number, y: number): boolean {
   let resul: number;
   resul = y % x;
   if (resul === 0) {
-    return (resultado = true);
+    return true;
   } else {
-    return (resultado = false);
+    return false;
   }
 }
 
@@ -19,7 +19,7 @@ function esMultiplo(x: number, y: number): boolean {
 buttonOk.addEventListener("click", () => {
   let num1: number = Number(primerNum.value);
   let num2: number = Number(segundoNum.value);
-  esMultiplo(num1, num2);
+  resultado = esMultiplo(num1, num2);
   if (resultado === true) {
     console.log("El numero ", num2, "si es multiplo de ", num1);
   } else {
